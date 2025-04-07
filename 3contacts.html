@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-uk="Контакти - Віртуальний Музей Мистецтва" data-en="Contacts - Virtual Art Museum">Контакти - Віртуальний Музей Мистецтва</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+     window.onload = function() {
+        switchLanguage('en');
+    };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <nav class="nav-menu">
+                    <div class="logo-container"><div class="nav-links">
+                        <img src="images/logo.png" alt="Логотип музею" class="logo-image">
+                        <a href="index.html" class="logo-text" data-uk="Віртуальний Музей Мистецтва" data-en="Virtual Art Museum">Віртуальний Музей Мистецтва</a>
+                    </div></div>
+                    <div class="nav-links">
+                        <a href="4news.html" data-uk="Новини" data-en="News">Новини</a>
+                        <a href="5gallery.html" data-uk="Галерея" data-en="Gallery">Галерея</a>
+                        <a href="2exhibitions.html" data-uk="Колекції" data-en="Collections">Колекції</a>
+                        <a href="1about.html" data-uk="Про проєкт" data-en="About">Про проєкт</a>
+                        <a href="3contacts.html" data-uk="Контакти" data-en="Contacts">Контакти</a>
+                    </div>
+                    <div class="language-switcher">
+                        <button onclick="switchLanguage('uk')" class="active">UA</button>
+                        <button onclick="switchLanguage('en')">EN</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <br>
+    
+    <main class="container" style="margin-top: 100px;">
+        <h2 class="section-title" data-uk="Контакти" data-en="Contacts">Контакти</h2>
+        <section class="developer-info" style="display: flex; flex-wrap: wrap; gap: 30px; align-items: center; margin-bottom: 60px;">
+            
+            <div style="flex: 1; min-width: 250px; text-align: center;">
+                <img src="images/MyI.jpg" alt="Розробник/Developer 1" style="width: 200px; height: 200px; border-radius: 50%; object-fit: cover; margin: 0 auto;">
+            </div>
+            <div style="flex: 2; min-width: 300px;">
+                <h2 data-uk="Про розробника" data-en="About the Developer">Про розробника</h2>
+                
+                <div>
+                    <b><p style="display: inline;" data-uk="ПІБ: " data-en="Full name: ">ПІБ: </p></b>
+                    <p style="display: inline;" data-uk="Дмитро Заложков" data-en="Dmytro Zalozhkov">Дмитро Заложков</p>
+                </div>
+                
+                <div>
+                    <b><p style="display: inline;" data-uk="Посада: " data-en="Position: ">Посада: </p></b>
+                    <p style="display: inline; " data-uk="Юрисконсульт, адвокат, веб розробник" data-en="Legal advisor, lawyer, web developer">Юрисконсульт, адвокат, веб розробник</p>
+                </div>
+                
+                <div>
+                    <b><p style="display: inline;" data-uk="Email: " data-en="Email: ">Email: </p></b>
+                    <p style="display: inline;"><a href="mailto:d.zalozhkov@gmail.com">d.zalozhkov@gmail.com</a></p>
+                </div>
+                
+                <div>
+                    <b><p style="display: inline;" data-uk="Телефон: " data-en="Phone: ">Телефон: </p></b>
+                    <p style="display: inline;"><u>+89654785123</u></p>
+                </div>                
+                
+                <div>
+                    <b><p style="display: inline;" data-uk="Адреса: " data-en="Address: ">Адреса: </p></b>
+                    <p style="display: inline;" data-uk="м. Київ" data-en="c. Kyiv">м. Київ</p>
+                </div>
+                
+                <div>
+                    <b><p style="display: inline;" data-uk="Про мене: " data-en="About me: ">Про мене: </p></b>
+                    <p style="display: inline;" data-uk="Я студент 4 курсу групи ПСК 21." data-en="I am a 4th year student of PSK 21 group.">Я студент 4 курсу групи ПСК 21.</p>
+                </div>
+                
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2 class="section-title" data-uk="Форма зворотного зв’язку" data-en="Contact Form">Форма зворотного зв’язку</h2>
+            <form action="#" method="post" style="max-width: 600px; margin: 0 auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+                <div style="margin-bottom: 15px;">
+                    <label for="name" data-uk="Ім'я" data-en="Name">Ім'я</label>
+                    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="email" data-uk="Email" data-en="Email">Email</label>
+                    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message" data-uk="Повідомлення" data-en="Message">Повідомлення</label>
+                    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn" data-uk="Відправити" data-en="Send" style="outline: none; border: none;">Відправити</button>
+            </form>
+        </section>
+    </main>
+    
+    <br>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-content">
+                    <h3 data-uk="Про проект" data-en="About Project">Про проект</h3>
+                    <p data-uk="Віртуальний Музей Мистецтва - це онлайн-платформа, що надає доступ до цифрових колекцій творів мистецтва та віртуальних виставок." data-en="Virtual Art Museum is an online platform that provides access to digital art collections and virtual exhibitions.">Віртуальний Музей Мистецтва - це онлайн-платформа, що надає доступ до цифрових колекцій творів мистецтва та віртуальних виставок.</p>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Контакти" data-en="Contacts">Контакти</h3>
+                    <p data-uk="Email: info@virtualmuseum.ua" data-en="Email: info@virtualmuseum.ua">Email: info@virtualmuseum.ua</p>
+                    <p data-uk="Технічна підтримка: support@virtualmuseum.ua" data-en="Technical Support: support@virtualmuseum.ua">Технічна підтримка: <a href="https://www.google.com">support@virtualmuseum.ua</a></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" data-uk="Facebook" data-en="Facebook">Facebook</a>
+                        <a href="https://www.instagram.com" data-uk="Instagram" data-en="Instagram">Instagram</a>
+                        <a href="https://twitter.com" data-uk="Twitter" data-en="Twitter">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Швидкі посилання" data-en="Quick Links">Швидкі посилання</h3>
+                    <p data-uk="3D-тури" data-en="3D Tours">3D-тури</p>
+                    <p data-uk="Віртуальні виставки" data-en="Virtual Exhibitions">Віртуальні виставки</p>
+                    <p data-uk="Освітні програми" data-en="Educational Programs">Освітні програми</p>
+                    <p data-uk="FAQ" data-en="FAQ">FAQ</p>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Наша Місія" data-en="Our Mission">Наша Місія</h3>
+                    <p data-uk="Ми прагнемо зробити мистецтво доступним для кожного, надаючи платформу для вивчення і дослідження цифрових колекцій." data-en="We strive to make art accessible to everyone, providing a platform for exploring and experiencing digital collections.">Ми прагнемо зробити мистецтво доступним для кожного, надаючи платформу для вивчення і дослідження цифрових колекцій.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-uk="© 2024 Віртуальний Музей Мистецтва. Всі права захищені." data-en="© 2024 Virtual Art Museum. All rights reserved.">© 2024 Віртуальний Музей Мистецтва. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

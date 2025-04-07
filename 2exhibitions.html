@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-uk="Колекції - Віртуальний Музей Мистецтва" data-en="Collections - Virtual Art Museum">Колекції - Віртуальний Музей Мистецтва</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+     window.onload = function() {
+        switchLanguage('en');
+    };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <nav class="nav-menu">
+                    <div class="logo-container"><div class="nav-links">
+                        <img src="images/logo.png" alt="Логотип музею" class="logo-image">
+                        <a href="index.html" class="logo-text" data-uk="Віртуальний Музей Мистецтва" data-en="Virtual Art Museum">Віртуальний Музей Мистецтва</a>
+                    </div></div>
+                    <div class="nav-links">
+                        <a href="4news.html" data-uk="Новини" data-en="News">Новини</a>
+                        <a href="5gallery.html" data-uk="Галерея" data-en="Gallery">Галерея</a>
+                        <a href="2exhibitions.html" data-uk="Колекції" data-en="Collections">Колекції</a>
+                        <a href="1about.html" data-uk="Про проєкт" data-en="About">Про проєкт</a>
+                        <a href="3contacts.html" data-uk="Контакти" data-en="Contacts">Контакти</a>
+                    </div>
+                    <div class="language-switcher">
+                        <button onclick="switchLanguage('uk')" class="active">UA</button>
+                        <button onclick="switchLanguage('en')">EN</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    
+    <br><br>
+    
+    <section class="featured-exhibitions">
+        <div class="container">
+            <h2 class="section-title" data-uk="Колекції" data-en="Collections">Колекції</h2>
+            <div class="exhibitions-grid">
+
+                <div class="exhibition-card" id="1"
+                    onclick="showDetails(
+                        getTranslation('Модернізм у живописі', 'Modernism in Painting'), 
+                        getTranslation('Колекція робіт художників-модерністів, що вплинули на розвиток мистецтва.', 'A collection of works by modernist painters who influenced the development of art.')
+                    )">
+                    <img src="images/collections/2.1.jpg" alt="Колекція/Colection 1">
+                    <div class="card-content">
+                        <h3 data-uk="Модернізм у живописі" data-en="Modernism in Painting">Модернізм у живописі</h3>
+                        <p data-uk="Роботи видатних модерністів" data-en="Works of prominent modernists">Роботи видатних модерністів</p>
+                        <a href="#1" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="1"
+                    onclick="showDetails(
+                        getTranslation('Мистецтво епохи бароко', 'Baroque Art'), 
+                        getTranslation('Оцифровані роботи майстрів бароко, включаючи скульптури та картини.', 'Digitized works of Baroque masters, including sculptures and paintings.')
+                    )">
+                    <img src="images/collections/2.2.jpg" alt="Колекція/Colection 2">
+                    <div class="card-content">
+                        <h3 data-uk="Мистецтво епохи бароко" data-en="Baroque Art">Мистецтво епохи бароко</h3>
+                        <p data-uk="Роботи великих майстрів бароко" data-en="Works of great Baroque masters">Роботи великих майстрів бароко</p>
+                        <a href="#1" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="1"
+                    onclick="showDetails(
+                        getTranslation('Інновації у цифровому мистецтві', 'Innovations in Digital Art'), 
+                        getTranslation('Колекція сучасних цифрових робіт, що розкриває потенціал технологій у мистецтві.', 'A collection of contemporary digital works revealing the potential of technology in art.')
+                    )">
+                    <img src="images/collections/2.3.jpg" alt="Колекція/Colection 3">
+                    <div class="card-content">
+                        <h3 data-uk="Інновації у цифровому мистецтві" data-en="Innovations in Digital Art">Інновації у цифровому мистецтві</h3>
+                        <p data-uk="Сучасні цифрові роботи" data-en="Contemporary digital works">Сучасні цифрові роботи</p>
+                        <a href="#1" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="2"
+                    onclick="showDetails(
+                        getTranslation('Імпресіонізм у фотографії', 'Impressionism in Photography'), 
+                        getTranslation('Фотографії, натхненні техніками імпресіонізму.', 'Photographs inspired by Impressionism techniques.')
+                    )">
+                    <img src="images/collections/2.4.jpg" alt="Колекція/Colection 4">
+                    <div class="card-content">
+                        <h3 data-uk="Імпресіонізм у фотографії" data-en="Impressionism in Photography">Імпресіонізм у фотографії</h3>
+                        <p data-uk="Мистецтво через об'єктив" data-en="Art through the lens">Мистецтво через об'єктив</p>
+                        <a href="#2" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="2"
+                    onclick="showDetails(
+                        getTranslation('Абстрактний експресіонізм', 'Abstract Expressionism'), 
+                        getTranslation('Оцифровані роботи, що досліджують емоції через кольори та форми.', 'Digitized works exploring emotions through colors and shapes.')
+                    )">
+                    <img src="images/collections/2.5.jpg" alt="Колекція/Colection 5">
+                    <div class="card-content">
+                        <h3 data-uk="Абстрактний експресіонізм" data-en="Abstract Expressionism">Абстрактний експресіонізм</h3>
+                        <p data-uk="Емоції через кольори" data-en="Emotions through colors">Емоції через кольори</p>
+                        <a href="#2" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="2"
+                    onclick="showDetails(
+                        getTranslation('Класичний портрет', 'Classical Portraiture'), 
+                        getTranslation('Портрети, що ілюструють техніки класичного мистецтва.', 'Portraits illustrating classical art techniques.')
+                    )">
+                    <img src="images/collections/2.6.jpg" alt="Колекція/Colection 6">
+                    <div class="card-content">
+                        <h3 data-uk="Класичний портрет" data-en="Classical Portraiture">Класичний портрет</h3>
+                        <p data-uk="Портрети епохи класицизму" data-en="Portraits of the classical era">Портрети епохи класицизму</p>
+                        <a href="#2" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="3"
+                    onclick="showDetails(
+                        getTranslation('Мистецтво мінімалізму', 'Art of Minimalism'), 
+                        getTranslation('Колекція мінімалістичних робіт, що підкреслює естетику простоти.', 'A collection of minimalist works emphasizing the aesthetics of simplicity.')
+                    )">
+                    <img src="images/collections/2.7.jpg" alt="Колекція/Colection 7">
+                    <div class="card-content">
+                        <h3 data-uk="Мистецтво мінімалізму" data-en="Art of Minimalism">Мистецтво мінімалізму</h3>
+                        <p data-uk="Естетика простоти" data-en="Aesthetics of simplicity">Естетика простоти</p>
+                        <a href="#3" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="3"
+                    onclick="showDetails(
+                        getTranslation('Традиційний текстиль', 'Traditional Textiles'), 
+                        getTranslation('Оцифровані зразки текстилю, що відображають багатство культурної спадщини.', 'Digitized textile samples reflecting the richness of cultural heritage.')
+                    )">
+                    <img src="images/collections/2.8.jpg" alt="Колекція/Colection 8">
+                    <div class="card-content">
+                        <h3 data-uk="Традиційний текстиль" data-en="Traditional Textiles">Традиційний текстиль</h3>
+                        <p data-uk="Багатство культурної спадщини" data-en="Richness of cultural heritage">Багатство культурної спадщини</p>
+                        <a href="#3" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" id="3"
+                    onclick="showDetails(
+                        getTranslation('Символіка у мистецтві', 'Symbolism in Art'), 
+                        getTranslation('Роботи, що досліджують символічні мотиви у різних культурах.', 'Works exploring symbolic motifs in different cultures.')
+                    )">
+                    <img src="images/collections/2.9.jpg" alt="Колекція/Colection 9">
+                    <div class="card-content">
+                        <h3 data-uk="Символіка у мистецтві" data-en="Symbolism in Art">Символіка у мистецтві</h3>
+                        <p data-uk="Мотиви у різних культурах" data-en="Motifs in different cultures">Мотиви у різних культурах</p>
+                        <a href="#3" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <div class="news-details-overlay" id="newsDetails">
+        <div class="news-details-box">
+            <button class="close-btn" onclick="closeDetails()">×</button>
+            <h3 id="detailsTitle"></h3>
+            <p id="detailsDescription"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-content">
+                    <h3 data-uk="Про проект" data-en="About Project">Про проект</h3>
+                    <p data-uk="Віртуальний Музей Мистецтва - це онлайн-платформа, що надає доступ до цифрових колекцій творів мистецтва та віртуальних виставок." data-en="Virtual Art Museum is an online platform that provides access to digital art collections and virtual exhibitions.">Віртуальний Музей Мистецтва - це онлайн-платформа, що надає доступ до цифрових колекцій творів мистецтва та віртуальних виставок.</p>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Контакти" data-en="Contacts">Контакти</h3>
+                    <p data-uk="Email: info@virtualmuseum.ua" data-en="Email: info@virtualmuseum.ua">Email: info@virtualmuseum.ua</p>
+                    <p data-uk="Технічна підтримка: support@virtualmuseum.ua" data-en="Technical Support: support@virtualmuseum.ua">Технічна підтримка: <a href="https://www.google.com">support@virtualmuseum.ua</a></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" data-uk="Facebook" data-en="Facebook">Facebook</a>
+                        <a href="https://www.instagram.com" data-uk="Instagram" data-en="Instagram">Instagram</a>
+                        <a href="https://twitter.com" data-uk="Twitter" data-en="Twitter">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Швидкі посилання" data-en="Quick Links">Швидкі посилання</h3>
+                    <p data-uk="3D-тури" data-en="3D Tours">3D-тури</p>
+                    <p data-uk="Віртуальні виставки" data-en="Virtual Exhibitions">Віртуальні виставки</p>
+                    <p data-uk="Освітні програми" data-en="Educational Programs">Освітні програми</p>
+                    <p data-uk="FAQ" data-en="FAQ">FAQ</p>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Наша Місія" data-en="Our Mission">Наша Місія</h3>
+                    <p data-uk="Ми прагнемо зробити мистецтво доступним для кожного, надаючи платформу для вивчення і дослідження цифрових колекцій." data-en="We strive to make art accessible to everyone, providing a platform for exploring and experiencing digital collections.">Ми прагнемо зробити мистецтво доступним для кожного, надаючи платформу для вивчення і дослідження цифрових колекцій.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-uk="© 2024 Віртуальний Музей Мистецтва. Всі права захищені." data-en="© 2024 Virtual Art Museum. All rights reserved.">© 2024 Віртуальний Музей Мистецтва. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

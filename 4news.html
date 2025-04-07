@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-uk="Новини - Віртуальний Музей Мистецтва" data-en="News - Virtual Art Museum">Новини - Віртуальний Музей Мистецтва</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+     window.onload = function() {
+        switchLanguage('en');
+    };
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-main">
+            <div class="container">
+                <nav class="nav-menu">
+                    <div class="logo-container"><div class="nav-links">
+                        <img src="images/logo.png" alt="Логотип музею" class="logo-image">
+                        <a href="index.html" class="logo-text" data-uk="Віртуальний Музей Мистецтва" data-en="Virtual Art Museum">Віртуальний Музей Мистецтва</a>
+                    </div></div>
+                    <div class="nav-links">
+                        <a href="4news.html" data-uk="Новини" data-en="News">Новини</a>
+                        <a href="5gallery.html" data-uk="Галерея" data-en="Gallery">Галерея</a>
+                        <a href="2exhibitions.html" data-uk="Колекції" data-en="Collections">Колекції</a>
+                        <a href="1about.html" data-uk="Про проєкт" data-en="About">Про проєкт</a>
+                        <a href="3contacts.html" data-uk="Контакти" data-en="Contacts">Контакти</a>
+                    </div>
+                    <div class="language-switcher">
+                        <button onclick="switchLanguage('uk')" class="active">UA</button>
+                        <button onclick="switchLanguage('en')">EN</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <br><br>
+
+    <section class="news-events">
+        <div class="container">
+            <h2 class="section-title" data-uk="Новини" data-en="News">Новини</h2>
+            <div class="exhibitions-grid">
+                
+                <div class="exhibition-card" 
+                     onclick="showDetails(
+                         getTranslation('Нова онлайн-виставка', 'New Online Exhibition'), 
+                         getTranslation('Відкриття нової віртуальної експозиції, присвяченої імпресіонізму.', 'Launch of a new virtual exposition dedicated to Impressionism.')
+                     )">
+                    <img src="images/news/1.1.jpg" alt="Новина/News 1">
+                    <div class="card-content">
+                        <h3 data-uk="Нова онлайн-виставка" data-en="New Online Exhibition">Нова онлайн-виставка</h3>
+                        <p data-uk="Відкриття нової віртуальної експозиції" data-en="Launch of a new virtual exposition">Відкриття нової віртуальної експозиції</p>
+                        <a href="#" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+
+                <div class="exhibition-card" 
+                 onclick="showDetails(
+                     getTranslation('Знижки для відвідувачів', 'Discounts for visitors'), 
+                     getTranslation('Спеціальна пропозиція: знижка 30% на всі квитки протягом грудня.', 'Special offer: 30% discount on all tickets throughout December.')
+                 )">
+                    <img src="images/news/1.3.jpg" alt="Новина/News 2">
+                    <div class="card-content">
+                        <h3 data-uk="Знижки для відвідувачів" data-en="Visitor Discounts">Знижки для відвідувачів</h3>
+                        <p data-uk="Спеціальна пропозиція на грудень" data-en="Special offer for December">Спеціальна пропозиція на грудень</p>
+                        <a href="#" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" 
+                 onclick="showDetails(
+                     getTranslation('Підтримка освіти', 'Supporting Education'), 
+                     getTranslation('Музей запускає серію освітніх заходів для школярів.', 'The museum is launching a series of educational events for schoolchildren.')
+                 )">
+                    <img src="images/news/1.2.jpg" alt="Новина/News 3">
+                    <div class="card-content">
+                        <h3 data-uk="Підтримка освіти" data-en="Education Support">Підтримка освіти</h3>
+                        <p data-uk="Освітні заходи для школярів" data-en="Educational events for students">Освітні заходи для школярів</p>
+                        <a href="#" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" 
+                 onclick="showDetails(
+                     getTranslation('Конкурс', 'Competition'), 
+                     getTranslation('Оголошено новий конкурс цифрового мистецтва! Учасників чекають цінні нагороди.', 'A new digital art competition has been announced! Valuable prizes await participants.')
+                 )">
+                    <div class="card-content">
+                        <h3 data-uk="Конкурс" data-en="Contest">Конкурс</h3>
+                        <p data-uk="Новий конкурс цифрового мистецтва" data-en="New digital art contest">Новий конкурс цифрового мистецтва</p>
+                        <a href="#" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" 
+                 onclick="showDetails(
+                     getTranslation('Планові роботи', 'Scheduled Maintenance'), 
+                     getTranslation('Вебсайт буде тимчасово недоступний 1 грудня з 00:00 до 04:00 через технічне обслуговування.', 
+                          'The website will be temporarily unavailable on December 1 from 00:00 to 04:00 due to maintenance.')
+                 )">
+                    <div class="card-content">
+                        <h3 data-uk="Планові роботи" data-en="Scheduled Maintenance">Планові роботи</h3>
+                        <p data-uk="Вебсайт буде тимчасово недоступний" data-en="The website will be temporarily unavailable">Вебсайт буде тимчасово недоступний</p>
+                        <a href="#" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+
+                <div class="exhibition-card" 
+                 onclick="showDetails(
+                     getTranslation('Запуск блогу', 'Blog Launch'), 
+                     getTranslation('Музей відкриває новий блог для обговорення сучасного мистецтва.', 'The museum opens a new blog to discuss contemporary art.')
+                 )">
+                    <div class="card-content">
+                        <h3 data-uk="Запуск блогу" data-en="Blog Launch">Запуск блогу</h3>
+                        <p data-uk="Новий блог про мистецтво" data-en="New art blog">Новий блог про мистецтво</p>
+                        <a href="#" class="btn" data-uk="Детальніше" data-en="Learn More">Детальніше</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="news-details-overlay" id="newsDetails">
+        <div class="news-details-box">
+            <button class="close-btn" onclick="closeDetails()">×</button>
+            <h3 id="detailsTitle"></h3>
+            <p id="detailsDescription"></p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-content">
+                    <h3 data-uk="Про проект" data-en="About Project">Про проект</h3>
+                    <p data-uk="Віртуальний Музей Мистецтва - це онлайн-платформа, що надає доступ до цифрових колекцій творів мистецтва та віртуальних виставок." data-en="Virtual Art Museum is an online platform that provides access to digital art collections and virtual exhibitions.">Віртуальний Музей Мистецтва - це онлайн-платформа, що надає доступ до цифрових колекцій творів мистецтва та віртуальних виставок.</p>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Контакти" data-en="Contacts">Контакти</h3>
+                    <p data-uk="Email: info@virtualmuseum.ua" data-en="Email: info@virtualmuseum.ua">Email: info@virtualmuseum.ua</p>
+                    <p data-uk="Технічна підтримка: support@virtualmuseum.ua" data-en="Technical Support: support@virtualmuseum.ua">Технічна підтримка: <a href="https://www.google.com">support@virtualmuseum.ua</a></p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" data-uk="Facebook" data-en="Facebook">Facebook</a>
+                        <a href="https://www.instagram.com" data-uk="Instagram" data-en="Instagram">Instagram</a>
+                        <a href="https://twitter.com" data-uk="Twitter" data-en="Twitter">Twitter</a>
+                    </div>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Швидкі посилання" data-en="Quick Links">Швидкі посилання</h3>
+                    <p data-uk="3D-тури" data-en="3D Tours">3D-тури</p>
+                    <p data-uk="Віртуальні виставки" data-en="Virtual Exhibitions">Віртуальні виставки</p>
+                    <p data-uk="Освітні програми" data-en="Educational Programs">Освітні програми</p>
+                    <p data-uk="FAQ" data-en="FAQ">FAQ</p>
+                </div>
+                <div class="footer-content">
+                    <h3 data-uk="Наша Місія" data-en="Our Mission">Наша Місія</h3>
+                    <p data-uk="Ми прагнемо зробити мистецтво доступним для кожного, надаючи платформу для вивчення і дослідження цифрових колекцій." data-en="We strive to make art accessible to everyone, providing a platform for exploring and experiencing digital collections.">Ми прагнемо зробити мистецтво доступним для кожного, надаючи платформу для вивчення і дослідження цифрових колекцій.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-uk="© 2024 Віртуальний Музей Мистецтва. Всі права захищені." data-en="© 2024 Virtual Art Museum. All rights reserved.">© 2024 Віртуальний Музей Мистецтва. Всі права захищені.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
